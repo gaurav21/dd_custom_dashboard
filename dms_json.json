@@ -1,0 +1,1411 @@
+{
+  "title": "AWS DMS",
+  "description": null,
+  "widgets":
+[
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.available_memory{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdcchanges_disk_source{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdcchanges_disk_target{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdcchanges_memory_source{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdcchanges_memory_target{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdcincoming_changes{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdclatency_source{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdclatency_target{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdcthroughput_bandwidth_source{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdcthroughput_bandwidth_target{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdcthroughput_rows_source{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cdcthroughput_rows_target{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cpuallocated{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.cpuutilization{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.disk_queue_depth{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.free_memory{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.free_storage_space{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.freeable_memory{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.full_load_throughput_bandwidth_source{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.full_load_throughput_bandwidth_target{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.full_load_throughput_rows_source{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.full_load_throughput_rows_target{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.memory_allocated{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.memory_allocated_bytes{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.memory_usage{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.memory_usage_bytes{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.network_receive_throughput{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.network_transmit_throughput{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.read_iops{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.read_latency{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.read_throughput{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.recovery_count{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.run_counter{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.service_cpuutilization{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.service_memory_usage{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.swap_usage{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.total_bytes_read{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.total_bytes_written{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.write_iops{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+},
+{
+  "definition": {
+    "title": "",
+    "title_size": "16",
+    "title_align": "left",
+    "show_legend": true,
+    "legend_layout": "auto",
+    "legend_columns": ["avg", "min", "max", "value", "sum"],
+    "type": "timeseries",
+    "requests": [
+      {
+        "formulas": [
+          {
+            "formula": "query1"
+          }
+        ],
+        "queries": [
+          {
+            "name": "query1",
+            "data_source": "metrics",
+            "query": "sum:aws.dms.write_latency{*}.as_count()"
+          }
+        ],
+        "response_format": "timeseries",
+        "style": {
+          "palette": "dog_classic",
+          "order_by": "values",
+          "line_type": "solid",
+          "line_width": "normal"
+        },
+        "display_type": "line"
+      }
+    ]
+  }
+}
+],
+  "template_variables": [],
+  "layout_type": "ordered",
+  "notify_list": [],
+  "reflow_type": "auto"
+}
